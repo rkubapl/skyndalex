@@ -1,0 +1,4 @@
+node_modules
+rethinkdb-2.3.6
+.idea
+src/config.json

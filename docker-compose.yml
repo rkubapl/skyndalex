@@ -1,0 +1,10 @@
+version: '2'
+services:
+  rethinkdb:
+    image: rethinkdb
+    ports:
+      - "28015:28015"
+      - "8080:8080"
+    volumes:
+      - ./rethink-data:/rethinkdb_data
+    command: rethinkdb -d /rethinkdb_data --bind 0.0.0.0 --bind-http 0.0.0.0
